@@ -1,0 +1,12 @@
+G³ówny tut: https://www.youtube.com/watch?v=f5pm29yhaTs
+Game Manager: https://www.youtube.com/watch?v=4I0vonyqMi8
+
+Puki co GameManager tworzy tylko jedn¹ siatke i wywo³uje drugi case
+
+Nastêpuj¹cy kod sprawia ¿e zawartoœæ pliku ze skryptem jest dostêpna dla ka¿dego innego pliku:
+
+public static GameManager Instance;
+private void Awake()
+    {
+        Instance = this;
+    }
