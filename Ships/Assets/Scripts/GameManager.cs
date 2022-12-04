@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour
             case GameState.GenerateGrid:
                 GridManager.Instance.GenerateGrid();
                 break;
+            case GameState.GenerateEnemyGrid:
+                //GridManager.Instance.GenerateGrid();
+                break;
             case GameState.SpawnShips:
                 break;
             case GameState.EnemySpawnShips:
@@ -49,6 +52,7 @@ public class GameManager : MonoBehaviour
 public enum GameState
 {
     GenerateGrid,
+    GenerateEnemyGrid,
     SpawnShips,
     EnemySpawnShips,
     PlayerTurn,

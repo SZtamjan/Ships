@@ -10,3 +10,5 @@ private void Awake()
     {
         Instance = this;
     }
+
+Statki Online - http://pl.battleship-game.org/
