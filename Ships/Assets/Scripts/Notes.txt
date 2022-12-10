@@ -1,5 +1,6 @@
 G³ówny tut: https://www.youtube.com/watch?v=f5pm29yhaTs
 Game Manager: https://www.youtube.com/watch?v=4I0vonyqMi8
+Inny pomys³ na grid, mo¿e lepszy, goœciu t³umaczy odrazu jak funkcje dodawaæ na pola na klikniêcie https://youtu.be/waEsGu--9P8
 
 Puki co GameManager tworzy tylko jedn¹ siatke i wywo³uje drugi case
 
@@ -12,3 +13,5 @@ private void Awake()
     }
 
 Statki Online - http://pl.battleship-game.org/
+
+Przy stawianiu statków, jak statki bêd¹ d³ugoœci trzech pól, to trzy pola przyczepiaj¹ siê do kursora

@@ -31,14 +31,15 @@ public class GridManager : MonoBehaviour
     public void GenerateGrid()
     {
         _tiles = new Dictionary<Vector2, Tile>();
-        for (int x = 0; x < _width; x++)
+        for (float x = -3; x < _width/2-3; x += 0.5f)
         {
-            for (int y = 0; y < _height; y++)
+            for (float y = 2; y < _height/2+2; y += 0.5f)
             {
+                //
                 var spawnedTile = Instantiate(_tilePrefab, new Vector3(x, y), Quaternion.identity);
                 spawnedTile.name = $"Tile {x} {y}";
 
-                var isOffset = (x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0);
+                var isOffset = (x*2 % 2 == 0 && y*2 % 2 != 0) || (x*2 % 2 != 0 && y*2 % 2 == 0);
                 spawnedTile.Init(isOffset);
 
                 _tiles[new Vector2(x, y)] = spawnedTile;
