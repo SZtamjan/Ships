@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
-public class GameManager : MonoBehaviour
+public class GayManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    //public static GameManager Instance;
     public GameState GameState;
 
     public GameState State;
 
     private void Awake()
     {
-        Instance = this;
+      //  Instance = this;
     }
     void Start()
     {
