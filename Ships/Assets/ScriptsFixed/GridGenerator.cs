@@ -18,6 +18,10 @@ public class GridGenerator : MonoBehaviour
         public GameObject pole;
     }
 
+    public Color GetColor()
+    {
+        return _nodePrefab.GetComponent<SpriteRenderer>().color;
+    }
 
     public void InitateGrid()
     {
